@@ -1,0 +1,41 @@
+.foot {
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	height: 13.0667vw;
+	display: flex;
+	box-shadow: 0 -0.2667vw 0.2667vw 0 #f1f1f1;
+	.left {
+		width: 73.8667vw;
+		background: #ffffff;
+    display: flex;
+    align-items: center;
+		.left-title {
+			margin-left: 6.4vw;
+			font-family: PingFangSC-Regular;
+			font-size: 3.7333vw;
+			color: #333333;
+			text-align: right;
+			line-height: 13.0667vw;
+      margin-right: 1.6vw;
+		}
+		.left-price {
+			font-family: PingFangSC-Medium;
+			font-weight: 500;
+			font-size: 4.2667vw;
+			color: #333333;
+			text-align: right;
+			line-height: 13.0667vw;
+		}
+	}
+	.right {
+		flex-grow: 1;
+		background: #4fb0f9;
+		font-family: PingFangSC-Medium;
+		font-weight: 500;
+		font-size: 3.7333vw;
+		color: #ffffff;
+		text-align: center;
+		line-height: 13.0667vw;
+	}
+}

@@ -1,0 +1,19 @@
+.head {
+	height: 11.7333vw;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 4.8vw;
+	.iconfont {
+		color: #b6b6b6;
+	}
+	.title {
+		font-size: 4.2667vw;
+		color: #333333;
+	}
+	.button {
+		font-size: 3.7333vw;
+		color: #333333;
+	}
+}

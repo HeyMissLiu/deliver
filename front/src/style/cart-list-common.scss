@@ -1,0 +1,94 @@
+.cart-list {
+    position: fixed;
+    top: 11.7333vw;
+    right: 0;
+    bottom: 13.0667vw;
+    left: 0;
+    overflow-y: auto;
+    padding-top: 4.2667vw;
+    .cart-item {
+        width: 90.4vw;
+        background: #ffffff;
+        border-radius: 1.0667vw;
+        margin: 0 auto 4.2667vw;
+        padding: 4.2667vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+            font-family: PingFangSC-Medium;
+            font-weight: 500;
+            font-size: 4.2667vw;
+            color: #333333;
+            margin-bottom: 4.2667vw;
+        }
+        .cart-info {
+            margin-bottom: 4.2667vw;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .product-img {
+                width: 12.2667vw;
+                height: 12.2667vw;
+                margin-right: 4.2667vw;
+            }
+            .product-name {
+                font-family: PingFangSC-Medium;
+                font-weight: 500;
+                font-size: 3.7333vw;
+                color: #333333;
+                width: calc(100% - 16.5333vw);
+                //多余部分隐藏，用省略号代替
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                margin-bottom: 1.6vw;
+            }
+            .product-data {
+                font-family: PingFangSC-Regular;
+                font-size: 3.7333vw;
+                color: #e93b3b;
+                line-height: 5.3333vw;
+                width: calc(100% - 16.5333vw);
+                .left {
+                    .price {
+                        &::before {
+                            content: "¥";
+                            display: inline-block;
+                            transform: scale(0.8);
+                            transform-origin: right bottom;
+                        }
+                    }
+                }
+                .right {
+                    .total {
+                        color: #000;
+                        &::before {
+                            content: "¥";
+                            display: inline-block;
+                            transform: scale(0.8);
+                            transform-origin: right bottom;
+                        }
+                    }
+                }
+            }
+        }
+        .more {
+            width: 81.8667vw;
+            height: 7.4667vw;
+            background: #f5f5f5;
+            font-family: PingFangSC-Light;
+            font-size: 3.7333vw;
+            color: #999999;
+            text-align: center;
+            line-height: 6.6667vw;
+            .iconfont {
+                margin-left: 2.1333vw;
+                display: inline-block;
+                transform: translateY(0.5333vw);
+                font-size: 5.3333vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.container {
+	width: 100vw;
+	height: 100vh;
+	background-color: #f8f8f8;
+	@import "./head-common";
+	.info {
+		margin-top: 3.2vw;
+		height: 59.7333vw;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		.gap {
+			width: 90.4vw;
+			height: 0.2667vw;
+			background: #f1f1f1;
+			margin: 0 auto;
+		}
+		.item {
+			padding-left: 4.8vw;
+			.text {
+				margin-right: 1vw;
+				font-size: 3.7333vw;
+				color: #666666;
+				line-height: 5.3333vw;
+			}
+			.input-item {
+				font-size: 3.7333vw;
+				color: #333333;
+				line-height: 5.3333vw;
+				&::placeholder {
+					font-size: 3.7333vw;
+					color: #999999;
+					line-height: 5.3333vw;
+				}
+			}
+		}
+	}
+}
